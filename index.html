@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="text-center py-3">
+        <h1>My Money  </h1> <i class="fa-solid fa-hand-holding-dollar"></i>
+    </header>
+    <section class="container">
+        <div class="row py-3">
+            <div class="col-md-7 col-lg-7 col-12">
+                <div class="imgBox">
+                    <img src="images/bank.jpg" class="img-fluid vh-80" alt="">
+                </div>
+            </div>
+            <div class="col-md-5 col-lg-5 col-12">
+                <div class="alert alert-success bg-danger text-white" id="danger"  role="alert">
+                    Plese give a positive Value!
+                  </div>
+                <div class="imgBox d-flex justify-content-center align-items-center ">
+                    <div class="inputBox">
+                        <div class="incomeBox">
+                            
+                            <div class="boxIncome box">
+                                <h3 class="text-center">Income</h3>
+                                <label for="">Income :</label>
+                                <input type="text" id="incomeInput">
+                            </div>
+                            <div class="expenses box">
+                                <h4 class="text-center">Expenses</h4>
+                                <p id="msg"></p>
+                                <div>
+                                    <label class="">Food &nbsp;	&nbsp;:</label>
+                                    <input type="text" id="footInput">
+                                </div>
+                                <div >
+                                    <label class="">Rent &nbsp;	&nbsp; 	 :</label> 
+                                    <input type="text" id="rentInput">
+                                </div>
+                                <div >
+                                    <label class="">Clothes : </label>
+                                    <input type="text" id="clothesInput">
+                                </div>
+                                <button class="btn btn-primary text-center px-4 ms-4 my-3" id="calculate">Calculate</button>
+                            </div>
+                            <div class="totalBalance">
+                                <p class="text-center fw-bolder">Total Expensis : <span id="total-expensis">0</span></p>
+                                <p class="text-center fw-bolder">Balance : <span id="restBalance">0</span> </p>
+                            </div>
+                            <div class="saveCal">
+                                <div>
+                                    <label for="">Save</label>
+                                    <input type="text" id="parsent-value"> &percnt; <button class="btn btn-primary" id="save-btn">Save</button>
+                                </div>
+                            </div>
+                            <div class="savingAmount">
+                                <p class="text-center fw-bolder">Saving Amount: <span id="saveAmount">0</span> </p>
+                                <p class="text-center fw-bolder">Remaining Balance: <span id="remaining-Balance">0</span> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/fdde96b581.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
